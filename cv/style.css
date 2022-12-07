@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box{
+    margin: 15px 0 1px 0;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box input{
+    height: 25px;
+    width: 100%;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid#ccc;
+    border-bottom-width: 2px ;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+
+}
+form .button {
+    height: 45px;
+    margin: 20px 240px;
+
+}
+form .button input{
+    height: 80%;
+    background-color: purple;
+    color: white;
+    border-color: purple;
+}
+form .reset {
+    height: 45px;
+    margin: -65px 300px;
+
+}
+form .reset input{
+    height: 80%;
+    background-color: purple;
+    color: white;
+    border-color: purple;
+}
+@media only screen and(max-width:620px){
+    .container,.user-details,.input-box,.button,.reset, input, form 
+    
+}
